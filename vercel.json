@@ -11,14 +11,40 @@
             "dest": "/public/img/"
         },
         {
+            "src": "/css/(.*)",
+            "dest": "/public/css/"
+        },
+        {
+            "src": "/js/(.*)",
+            "dest": "/public/js/"
+        },
+        {
+            "src": "/favicon.ico",
+            "dest": "/public/favicon.ico/"
+        },
+        {
             "src": "/(.*)",
             "dest": "/api/index.php"
+        },
+        {
+            "src": "/build/(.*)",
+            "dest": "/build/"
+        },
+        {
+            "src": "/build/assets/(.*)",
+            "dest": "/build/assets/"
+        },
+        {
+            "src": "/resources/css/(.*)",
+            "dest": "/resources/css/"
         }
     ],
     "env": {
+        "APP_NAME": "sikerma",
+        "APP_KEY": "base64:02rX7HFCah4GR/wt4pguqmgsxd8qnBCnmB5mx5ltQdg=",
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "https://sikerma.vercel.app/",
+        "APP_URL": "https://sikerma.vercel.app",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
